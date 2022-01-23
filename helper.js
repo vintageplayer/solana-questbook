@@ -4,7 +4,7 @@ const getReturnAmount = (inputs) => {
 	return parseFloat(ratio.split(':')[1]) * betAmount;
 };
 
-const totalAmtToBePaid = () => {};
+const totalAmtToBePaid = (inputs) => {return inputs['betAmount'];};
 const randomNumber = (min, max) => {
 	return Math.floor(Math.random() * (max - min) ) + min;
 };
