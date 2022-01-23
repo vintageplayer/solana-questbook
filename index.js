@@ -2,14 +2,23 @@ var inquirer = require('inquirer');
 const { getReturnAmount, totalAmtToBePaid, randomNumber } = require('./helper');
 const {getWalletBalance,transferSOL,airDropSol}=require("./solana");
 
-// const connection=new web3.Connection(web3.clusterApiUrl("devnet"),"confirmed");
-//For checking whether the connection is successfully made
-// console.log(connection);
+const connection=new web3.Connection(web3.clusterApiUrl("devnet"),"confirmed");
+For checking whether the connection is successfully made
+console.log(connection);
 
 // const userWallet=web3.Keypair.generate();
 // console.log(userWallet);
 
-// const userWallet=web3.Keypair.fromSecretKey(Uint8Array.from(userSecretKey));
+const userSecretKey = [
+   73, 130, 131, 241, 139, 101,  39, 155,  42,  97, 159,
+   19, 111, 208, 106, 107, 154, 204, 170, 254,  51,  52,
+   49, 213,  46,  52, 149, 184, 233, 190, 160, 233, 194,
+  128, 140, 197, 246,  54, 142, 148, 244,  24, 113,  36,
+  181, 159,  26,   9, 210, 179, 249, 254, 137, 169,  83,
+  233,  18, 198,  33,  42,  57, 243, 130,  13
+];
+
+const userWallet=web3.Keypair.fromSecretKey(Uint8Array.from(userSecretKey));
 
 
 /** Input from user:
