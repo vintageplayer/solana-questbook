@@ -1,0 +1,30 @@
+ts-node ./js/packages/cli/src/candy-machine-v2-cli.ts upload -e devnet -k ~/.config/solana/id.json -cp ./config.json -c example ./assets
+wallet public key: 6CvtwfYLCDEzagVV99Dwvjrq6fLSBoh6bx7gGEwQDVqn
+(node:61639) ExperimentalWarning: stream/web is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:61639) ExperimentalWarning: buffer.Blob is an experimental feature. This feature could change at any time
+WARNING: The "arweave" storage option will be going away soon. Please migrate to arweave-bundle or arweave-sol for mainnet.
+
+Beginning the upload for 10 (img+json) pairs
+started at: 1648498676197
+initializing candy machine
+Candy machine address:  6gMUw52SSihN7RWtuLxjWFUxX57uaiW2dMTv4tcQPD6m
+Collection metadata address:  BxthkqLLBcbaC57yfPGDPFQHoZahWcFjm37xsKrVYw8z
+Collection metadata authority:  6CvtwfYLCDEzagVV99Dwvjrq6fLSBoh6bx7gGEwQDVqn
+Collection master edition address:  PyxLurGi8Dd1HtrbVND4w7Mt2WYE16qytJWfMRR1hmr
+Collection mint address:  AqxwEXM3Zf3KuKnHqv6BZCrguz2hkjtAiHmWqUtm5FwR
+Collection PDA address:  8ivzFHsYoYkjAuNgvHYVb8C7HVcpNAEu77hqLg7zxAwq
+Collection authority record address:  DJ7yYpGCUjXaVXYRoeLZjwkHGGoa9t8hCVKrbFgyMk5f
+Collection:  {
+  collectionMetadata: 'BxthkqLLBcbaC57yfPGDPFQHoZahWcFjm37xsKrVYw8z',
+  collectionPDA: '8ivzFHsYoYkjAuNgvHYVb8C7HVcpNAEu77hqLg7zxAwq',
+  txId: '3gRCuY7AWtGEW1x6LzuNhP2CLE9usVAxxsMq8i1TguKPVUAzivjtQwuE7Wa63n2zzAiEPAxGZNg9angbiWGaYwFw'
+}
+initialized config for a candy machine with publickey: 6gMUw52SSihN7RWtuLxjWFUxX57uaiW2dMTv4tcQPD6m
+[0] out of [10] items have been uploaded
+Starting upload for [10] items, format {"mediaExt":".png","index":"0"}
+Progress: [████████████████████████████████████████] 100% | 10/10
+Writing all indices in 1 transactions...
+Progress: [████████████████████████████████████████] 100% | 1/1
+Done. Successful = true.
+ended at: 2022-03-28T20:18:42.777Z. time taken: 00:00:46
